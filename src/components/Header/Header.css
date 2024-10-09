@@ -1,0 +1,6 @@
+.web-header ul li a {
+	padding: 1rem;
+	width: 60px;
+	cursor: pointer;
+	z-index: 100;
+}

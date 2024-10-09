@@ -46,7 +46,7 @@ input[type="radio"] {
 }
 
 :root {
-	font-family: "Inter", sans-serif;
+	font-family: Roboto, Oxygen, Ubuntu;
 	line-height: 1.5;
 	font-weight: 400;
 	font-size: 62.5%;
@@ -55,9 +55,9 @@ input[type="radio"] {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
-    overflow: auto;
+	overflow: auto;
 
-    /* Themes: */
+	/* Themes: */
 }
 
 html,
@@ -75,4 +75,18 @@ body {
 		rgba(60, 60, 60, 1) 0%,
 		rgba(0, 0, 0, 1) 58%
 	);
+}
+
+li,
+p,
+b,
+i,
+div,
+span {
+	font-size: 1.5rem;
+	color: whitesmoke;
+}
+
+a:hover {
+	color: rgb(0, 255, 0);
 }

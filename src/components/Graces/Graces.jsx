@@ -13,7 +13,7 @@ const Graces = () => {
 				shadows="basic"
 				eventSource={document.getElementById("root")}
 				eventPrefix="client"
-				camera={{ position: [0, 1.5, 14], fov: 45 }}
+				camera={{ position: [0, 1.5, 14], fov: 30 }}
 			>
 				<fog attach="fog" args={["black", 0, 20]} />
 				<pointLight position={[10, -10, -20]} intensity={10} />
@@ -69,7 +69,7 @@ const Model = (props) => {
 			>
 				<meshLambertMaterial color="#404044" />
 			</mesh>
-			<Annotation position={[1.75, 3, 2.5]}>
+			{/* <Annotation position={[1.75, 3, 2.5]}>
 				Thalia <span style={{ fontSize: "1.5em" }}>🌗</span>
 			</Annotation>
 			<Annotation position={[-4.5, 3.6, -3]}>
@@ -77,13 +77,13 @@ const Model = (props) => {
 			</Annotation>
 			<Annotation position={[1.5, 8, -3]}>
 				<span style={{ fontSize: "1.5em" }}>🌕</span> Aglaia
-			</Annotation>
+			</Annotation> */}
 			<spotLight
 				angle={0.5}
 				penumbra={0.5}
 				ref={light}
 				castShadow
-				intensity={150}
+				intensity={1000}
 				shadow-mapSize={1024}
 				shadow-bias={-0.001}
 			>

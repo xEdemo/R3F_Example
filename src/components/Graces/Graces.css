@@ -35,5 +35,6 @@
 	opacity: 0;
 	touch-action: none;
 	animation: fade-in 2s ease 0s forwards;
+	z-index: -1;
 }
 
