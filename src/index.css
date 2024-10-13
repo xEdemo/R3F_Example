@@ -88,7 +88,7 @@ span {
 }
 
 a:hover {
-	color: rgb(0, 255, 0);
+	color: rgba(226, 10, 10, 0.671);
 	text-decoration: underline;
 	cursor: pointer;
 }

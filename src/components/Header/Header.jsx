@@ -26,16 +26,19 @@ const Header = () => {
 						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<Link>Roonie</Link>
+						<Link>Threat Reports</Link>
 					</li>
 					<li>
-						<Link>Big</Link>
+						<Link>Tool Reviews</Link>
 					</li>
 					<li>
-						<Link>Dog</Link>
+						<Link>Weekly Blog</Link>
 					</li>
 					<li>
-						<Link>Crackmes</Link>
+						<Link>Case Studies</Link>
+					</li>
+					<li>
+						<Link>CrackMe</Link>
 					</li>
 				</ul>
 			</nav>
