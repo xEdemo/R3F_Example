@@ -22,10 +22,21 @@ const Header = () => {
 						height: "50px",
 					}}
 				>
-					<li><Link>Home</Link></li>
-					<li><Link>Roonie</Link></li>
-					<li><Link>Big</Link></li>
-					<li><Link>Dog</Link></li>
+					<li>
+						<Link to="/">Home</Link>
+					</li>
+					<li>
+						<Link>Roonie</Link>
+					</li>
+					<li>
+						<Link>Big</Link>
+					</li>
+					<li>
+						<Link>Dog</Link>
+					</li>
+					<li>
+						<Link>Crackmes</Link>
+					</li>
 				</ul>
 			</nav>
 		</div>

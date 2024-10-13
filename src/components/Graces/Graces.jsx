@@ -20,14 +20,14 @@ const Graces = () => {
 				<pointLight position={[-10, -10, -20]} intensity={10} />
 				<Model position={[0, -5.2, 3]} rotation={[0, -0.2, 0]} />
 				<SoftShadows samples={3} />
-				<CameraControls
+				{/* <CameraControls
 					minPolarAngle={0}
 					maxPolarAngle={Math.PI / 2}
 					minAzimuthAngle={-Math.PI / 3}
 					maxAzimuthAngle={Math.PI / 3}
-					minDistance={8}
+					minDistance={15}
 					maxDistance={15}
-				/>
+				/> */}
 			</Canvas>
 		</>
 	);

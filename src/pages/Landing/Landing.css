@@ -1,0 +1,51 @@
+.landing-background {
+	width: 100%;
+	height: calc(100% - 50px);
+	max-height: 100vh;
+	position: absolute;
+	background-color: rgba(50, 0, 0, 0.25);
+	top: 50px;
+	overflow-y: auto;
+}
+
+.hero-section {
+	text-align: center;
+}
+
+.hero-content h1 {
+	font-size: 2.5rem;
+	margin-top: 1rem;
+}
+
+.hero-content p {
+	margin-bottom: 2rem;
+}
+
+.featured-section {
+	margin-bottom: 40px;
+}
+
+.featured-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.section-title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.about-section {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.about-content p {
+	font-size: 1.2rem;
+	margin: 10px 0;
+}
