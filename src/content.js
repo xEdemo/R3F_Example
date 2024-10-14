@@ -9,7 +9,9 @@ export const threatReports = [
 			alt: "Threat Report",
 		},
 		link: "",
+		author: "Xnrrrrrr",
 		timestamp: "October 13, 2024",
+		rating: 3.4,
 		content: [
 			{
 				p: "",
@@ -46,7 +48,9 @@ export const toolReviews = [
 			alt: "Tool Review",
 		},
 		link: "",
+		author: "Xnrrrrrr",
 		timestamp: "October 13, 2024",
+		rating: 3.4,
 		content: [
 			{
 				p: "",
@@ -83,7 +87,9 @@ export const caseStudies = [
 			alt: "Case Study",
 		},
 		link: "",
+		author: "Xnrrrrrr",
 		timestamp: "October 13, 2024",
+		rating: 3.4,
 		content: [
 			{
 				p: "",
@@ -120,7 +126,9 @@ export const malwareAnalyses = [
 			alt: "Malware Analysis",
 		},
 		link: "",
+		author: "Xnrrrrrr",
 		timestamp: "October 13, 2024",
+		rating: 3.4,
 		content: [
 			{
 				p: "",
@@ -157,7 +165,9 @@ export const weeklyBlog = [
 			alt: "Weekly Blog",
 		},
 		link: "",
+		author: "Xnrrrrrr",
 		timestamp: "October 13, 2024",
+		rating: 3.4,
 		content: [
 			{
 				p: "",

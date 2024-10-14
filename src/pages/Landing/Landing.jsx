@@ -1,4 +1,4 @@
-import { Graces, Header, LandingCard } from "./../../components";
+import { Graces, Header, LandingCard, Footer } from "./../../components";
 import { Link } from "react-router-dom";
 import {
 	threatReports,
@@ -128,6 +128,7 @@ const Landing = () => {
 							<Link to="/twitter">Twitter</Link>
 						</div>
 					</footer> */}
+					<Footer />
 				</>
 			</div>
 			<Graces />
