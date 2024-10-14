@@ -6,10 +6,22 @@
 	z-index: 1;
 	height: 100px;
 	position: relative;
+	text-align: center;
+}
+
+.footer p {
+	line-height: 2rem;
 }
 
 .footer-icon:hover {
 	transition: 0.5s;
 	cursor: pointer;
 	color: grey;
+}
+
+.footer div {
+	display: flex;
+	justify-content: space-evenly;
+	max-width: 1000px;
+	margin: auto;
 }
