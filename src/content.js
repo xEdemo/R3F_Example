@@ -1,6 +1,7 @@
 import JWT_TOOL_IMAGE_CARD from "./assets/toolReviews/JWT_TOOL/JWT_TOOL_IMAGE_CARD.png";
 import THREAT_REPORT_IMAGE_CARD from "./assets/threatReports/threatReport/THREAT_REPORT_IMAGE_CARD.jpg";
 import WEEK1_BLOG_IMAGE_CARD from "./assets/weeklyBlogs/WEEK1/WEEK1_BLOG_IMAGE_CARD.jpg";
+import CASE_STUDY1_IMAGE_CARD from "./assets/caseStudies/caseStudy1/CASE_STUDY1_IMAGE_CARD.jpg";
 
 
 export const threatReports = [
@@ -86,7 +87,7 @@ export const caseStudies = [
 		title: "Case Study Title",
 		desc: "This is a brief description that will summarize the case study. This will get cut off at 100 characters for the landing page.",
 		image: {
-			src: THREAT_REPORT_IMAGE_CARD,
+			src: CASE_STUDY1_IMAGE_CARD,
 			alt: "Case Study",
 		},
 		link: "",
