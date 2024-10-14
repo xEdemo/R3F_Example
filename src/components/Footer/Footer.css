@@ -5,7 +5,7 @@
 	background-color: rgb(34, 34, 34);
 	z-index: 1;
 	height: 100px;
-	position: absolute;
+	position: relative;
 }
 
 .footer-icon:hover {
