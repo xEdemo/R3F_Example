@@ -5,11 +5,12 @@ import "./index.css";
 
 // Pages
 import "./pages/Landing/Landing.css";
-import "./components/Cards/Landing/LandingCard.css";
 
 // Components
 import "./components/Graces/Graces.css";
 import "./components/Header/Header.css";
+import "./components/Cards/Landing/LandingCard.css";
+import "./components/Footer/Footer.css";
 
 const App = () => {
 	return (

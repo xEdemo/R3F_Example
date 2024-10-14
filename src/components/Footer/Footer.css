@@ -1,9 +1,14 @@
 .footer {
-	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: black;
+	background-color: rgb(34, 34, 34);
 	z-index: 1;
-	height: 100px;
+	height: 60px;
+}
+
+.footer-icon:hover {
+	transition: 0.5s;
+	cursor: pointer;
+	color: grey;
 }

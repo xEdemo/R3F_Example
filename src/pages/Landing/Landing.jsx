@@ -4,6 +4,7 @@ import {
 	threatReports,
 	toolReviews,
 	caseStudies,
+	threatProfiles,
 	malwareAnalyses,
 	weeklyBlog,
 } from "../../content.js";
@@ -21,11 +22,17 @@ const Landing = () => {
 			? `${lastestToolReview.desc.slice(0, 100)}...`
 			: lastestToolReview.desc;
 
-	const lastestCaseStudy = caseStudies[caseStudies.length - 1];
+	const latestCaseStudy = caseStudies[caseStudies.length - 1];
 	const truncatedCaseStudy =
-		lastestCaseStudy.desc.length > 100
-			? `${lastestCaseStudy.desc.slice(0, 100)}...`
-			: lastestCaseStudy.desc;
+		latestCaseStudy.desc.length > 100
+			? `${latestCaseStudy.desc.slice(0, 100)}...`
+			: latestCaseStudy.desc;
+
+	const latestThreatProfiles = threatProfiles[threatProfiles.length - 1];
+	const truncatedThreatProfiles =
+		latestThreatProfiles.desc.length > 100
+			? `${latestThreatProfiles.desc.slice(0, 100)}...`
+			: latestThreatProfiles.desc;
 
 	const latestMalwareAnalysis = malwareAnalyses[malwareAnalyses.length - 1];
 	const truncatedMalwareAnalysis =
@@ -63,7 +70,9 @@ const Landing = () => {
 								timestamp={latestThreatReport.timestamp}
 								linkToAll="/threat-reports"
 								linkText="View all threat reports."
-								linkToMore={`/threat-reports/${threatReports.length - 1}`}
+								linkToMore={`/threat-reports/${
+									threatReports.length - 1
+								}`}
 							/>
 							<LandingCard
 								title="Latest Tool Review"
@@ -74,18 +83,35 @@ const Landing = () => {
 								timestamp={lastestToolReview.timestamp}
 								linkToAll="/tool-reviews"
 								linkText="View all tool reviews."
-								linkToMore={`/tool-reviews/${toolReviews.length - 1}`}
+								linkToMore={`/tool-reviews/${
+									toolReviews.length - 1
+								}`}
 							/>
 							<LandingCard
 								title="Latest Case Study"
-								subtitle={lastestCaseStudy.title}
-								imageSrc={lastestCaseStudy.image.src}
-								imageAlt={lastestCaseStudy.image.alt}
+								subtitle={latestCaseStudy.title}
+								imageSrc={latestCaseStudy.image.src}
+								imageAlt={latestCaseStudy.image.alt}
 								desc={truncatedCaseStudy}
-								timestamp={lastestCaseStudy.timestamp}
+								timestamp={latestCaseStudy.timestamp}
 								linkToAll="/case-studies"
 								linkText="View all case studies."
-								linkToMore={`/case-studies/${caseStudies.length - 1}`}
+								linkToMore={`/case-studies/${
+									caseStudies.length - 1
+								}`}
+							/>
+							<LandingCard
+								title="Threat Profiles"
+								subtitle={latestThreatProfiles.title}
+								imageSrc={latestThreatProfiles.image.src}
+								imageAlt={latestThreatProfiles.image.alt}
+								desc={truncatedThreatProfiles}
+								timestamp={latestThreatProfiles.timestamp}
+								linkToAll="/threat-profiles"
+								linkText="View all threat profiles."
+								linkToMore={`/threat-profiles/${
+									threatProfiles.length - 1
+								}`}
 							/>
 							<LandingCard
 								title="Latest Malware Analysis"
@@ -96,7 +122,9 @@ const Landing = () => {
 								timestamp={latestMalwareAnalysis.timestamp}
 								linkToAll="/malware-analyses"
 								linkText="View all malware analyses."
-								linkToMore={`/malware-analyses/${malwareAnalyses.length - 1}`}
+								linkToMore={`/malware-analyses/${
+									malwareAnalyses.length - 1
+								}`}
 							/>
 							<LandingCard
 								title="Weekly Blog"
@@ -107,7 +135,9 @@ const Landing = () => {
 								timestamp={latestWeeklyBlog.timestamp}
 								linkToAll="/weekly-blogs"
 								linkText="View all weekly blogs."
-								linkToMore={`/weekly-blogs/${weeklyBlog.length - 1}`}
+								linkToMore={`/weekly-blogs/${
+									weeklyBlog.length - 1
+								}`}
 							/>
 						</div>
 					</section>
@@ -121,13 +151,6 @@ const Landing = () => {
 							</p>
 						</div>
 					</section>
-					{/* <footer className="footer">
-						<p>&copy; 2024 My Website. All rights reserved.</p>
-						<div className="social-links">
-							<Link to="/facebook">Facebook</Link>
-							<Link to="/twitter">Twitter</Link>
-						</div>
-					</footer> */}
 					<Footer />
 				</>
 			</div>

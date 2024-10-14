@@ -118,6 +118,45 @@ export const caseStudies = [
 	},
 ];
 
+export const threatProfiles = [
+	{
+		title: "Threat Profile Title",
+		desc: "This is a brief description that will summarize the threat profile. This will get cut off at 100 characters for the landing page.",
+		image: {
+			src: THREAT_REPORT_IMAGE_CARD,
+			alt: "Threat Profile",
+		},
+		link: "",
+		author: "Xnrrrrrr",
+		timestamp: "October 13, 2024",
+		rating: 3.4,
+		content: [
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+		],
+	},
+];
+
 export const malwareAnalyses = [
 	{
 		title: "Malware Analysis Title",
