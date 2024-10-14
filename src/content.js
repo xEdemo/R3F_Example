@@ -1,5 +1,7 @@
 import JWT_TOOL_IMAGE_CARD from "./assets/toolReviews/JWT_TOOL/JWT_TOOL_IMAGE_CARD.png";
 import THREAT_REPORT_IMAGE_CARD from "./assets/threatReports/threatReport/THREAT_REPORT_IMAGE_CARD.jpg";
+import WEEK1_BLOG_IMAGE_CARD from "./assets/weeklyBlogs/WEEK1/WEEK1_BLOG_IMAGE_CARD.jpg";
+
 
 export const threatReports = [
 	{
@@ -201,7 +203,7 @@ export const weeklyBlog = [
 		title: "Weekly Blog Title",
 		desc: "This is a brief description that will summarize the weekly blog. This will get cut off at 100 characters for the landing page.",
 		image: {
-			src: THREAT_REPORT_IMAGE_CARD,
+			src: WEEK1_BLOG_IMAGE_CARD,
 			alt: "Weekly Blog",
 		},
 		link: "",
