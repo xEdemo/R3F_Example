@@ -1,4 +1,5 @@
 import threatReportImage from "./assets/threatReports/titleOfReport/jeb.jpg";
+import JWT_TOOL_IMAGE_CARD from "./assets/toolReviews/JWT_TOOL/JWT_TOOL_IMAGE_CARD.png";
 
 export const threatReports = [
 	{
@@ -44,7 +45,7 @@ export const toolReviews = [
 		title: "Tool Review Title",
 		desc: "This is a brief description that will summarize the tool review. This will get cut off at 100 characters for the landing page.",
 		image: {
-			src: threatReportImage,
+			src: JWT_TOOL_IMAGE_CARD,
 			alt: "Tool Review",
 		},
 		link: "",
