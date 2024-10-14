@@ -1,12 +1,12 @@
-import threatReportImage from "./assets/threatReports/titleOfReport/jeb.jpg";
 import JWT_TOOL_IMAGE_CARD from "./assets/toolReviews/JWT_TOOL/JWT_TOOL_IMAGE_CARD.png";
+import THREAT_REPORT_IMAGE_CARD from "./assets/threatReports/threatReport/THREAT_REPORT_IMAGE_CARD.jpg";
 
 export const threatReports = [
 	{
 		title: "Report title",
 		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
 		image: {
-			src: threatReportImage,
+			src: THREAT_REPORT_IMAGE_CARD,
 			alt: "Threat Report",
 		},
 		link: "",
@@ -84,7 +84,7 @@ export const caseStudies = [
 		title: "Case Study Title",
 		desc: "This is a brief description that will summarize the case study. This will get cut off at 100 characters for the landing page.",
 		image: {
-			src: threatReportImage,
+			src: THREAT_REPORT_IMAGE_CARD,
 			alt: "Case Study",
 		},
 		link: "",
@@ -123,7 +123,7 @@ export const malwareAnalyses = [
 		title: "Malware Analysis Title",
 		desc: "This is a brief description that will summarize the malware. This will get cut off at 100 characters for the landing page.",
 		image: {
-			src: threatReportImage,
+			src: THREAT_REPORT_IMAGE_CARD,
 			alt: "Malware Analysis",
 		},
 		link: "",
@@ -162,7 +162,7 @@ export const weeklyBlog = [
 		title: "Weekly Blog Title",
 		desc: "This is a brief description that will summarize the weekly blog. This will get cut off at 100 characters for the landing page.",
 		image: {
-			src: threatReportImage,
+			src: THREAT_REPORT_IMAGE_CARD,
 			alt: "Weekly Blog",
 		},
 		link: "",
