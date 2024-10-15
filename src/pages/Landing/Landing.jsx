@@ -54,7 +54,8 @@ const Landing = () => {
 				<>
 					<section className="hero-section">
 						<div className="hero-content">
-							<h1>Welcome to My Website</h1>
+							<h1>Welcome to </h1>
+							<h2>The Public Eye</h2>
 							<p>Discover the latest insights and more.</p>
 						</div>
 					</section>
