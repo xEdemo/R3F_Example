@@ -5,8 +5,9 @@ const LandingCard = ({
 	subtitle,
 	imageSrc,
 	imageAlt,
-	desc,
+	author,
 	timestamp,
+	desc,
 	linkToAll,
 	linkText,
 	linkToMore,
@@ -17,7 +18,8 @@ const LandingCard = ({
 			<h3>{title}</h3>
 			<h6>{subtitle}</h6>
 			<img src={imageSrc} alt={imageAlt} className="landing-card-image" />
-			<b>{timestamp}</b>
+			<b>By: {author}</b>
+			<b style={{ marginBottom: "0.5rem" }}>{timestamp}</b>
 			<p>{desc}</p>
 			<Link to={linkToAll} className="landing-card-link">
 				{linkText}

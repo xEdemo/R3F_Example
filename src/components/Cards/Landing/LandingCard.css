@@ -26,13 +26,13 @@
 
 .landing-card b {
 	font-weight: bolder;
-	margin-bottom: 0.5rem;
+	line-height: 1.8rem;
 }
 
 .landing-card-image {
 	width: 100%;
 	height: auto;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 	border-radius: 4px;
 }
 .landing-card p {

@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 // Pages:
-import { Landing } from "./pages";
+import { Landing, AllThreatReports } from "./pages";
 
 // Components:
 
@@ -17,7 +17,7 @@ const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<App />}>
             <Route path="/" index={true} element={<Landing />} />
-
+            <Route path="/threat-reports" element={<AllThreatReports />} />
         </Route>
     )
 );

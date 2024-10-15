@@ -5,6 +5,7 @@ import "./index.css";
 
 // Pages
 import "./pages/Landing/Landing.css";
+import "./pages/ThreatReport/AllThreatReports.css";
 
 // Components
 import "./components/Graces/Graces.css";

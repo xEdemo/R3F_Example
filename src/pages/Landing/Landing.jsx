@@ -66,8 +66,9 @@ const Landing = () => {
 								subtitle={latestThreatReport.title}
 								imageSrc={latestThreatReport.image.src}
 								imageAlt={latestThreatReport.image.alt}
-								desc={truncatedThreatDesc}
+								author={latestThreatReport.author}
 								timestamp={latestThreatReport.timestamp}
+								desc={truncatedThreatDesc}
 								linkToAll="/threat-reports"
 								linkText="View all threat reports."
 								linkToMore={`/threat-reports/${
@@ -79,8 +80,9 @@ const Landing = () => {
 								subtitle={lastestToolReview.title}
 								imageSrc={lastestToolReview.image.src}
 								imageAlt={lastestToolReview.image.alt}
-								desc={truncatedToolReview}
+								author={lastestToolReview.author}
 								timestamp={lastestToolReview.timestamp}
+								desc={truncatedToolReview}
 								linkToAll="/tool-reviews"
 								linkText="View all tool reviews."
 								linkToMore={`/tool-reviews/${
@@ -92,8 +94,9 @@ const Landing = () => {
 								subtitle={latestCaseStudy.title}
 								imageSrc={latestCaseStudy.image.src}
 								imageAlt={latestCaseStudy.image.alt}
-								desc={truncatedCaseStudy}
+								author={latestCaseStudy.author}
 								timestamp={latestCaseStudy.timestamp}
+								desc={truncatedCaseStudy}
 								linkToAll="/case-studies"
 								linkText="View all case studies."
 								linkToMore={`/case-studies/${
@@ -105,8 +108,9 @@ const Landing = () => {
 								subtitle={latestThreatProfiles.title}
 								imageSrc={latestThreatProfiles.image.src}
 								imageAlt={latestThreatProfiles.image.alt}
-								desc={truncatedThreatProfiles}
+								author={latestThreatProfiles.author}
 								timestamp={latestThreatProfiles.timestamp}
+								desc={truncatedThreatProfiles}
 								linkToAll="/threat-profiles"
 								linkText="View all threat profiles."
 								linkToMore={`/threat-profiles/${
@@ -118,8 +122,9 @@ const Landing = () => {
 								subtitle={latestMalwareAnalysis.title}
 								imageSrc={latestMalwareAnalysis.image.src}
 								imageAlt={latestMalwareAnalysis.image.alt}
-								desc={truncatedMalwareAnalysis}
+								author={latestMalwareAnalysis.author}
 								timestamp={latestMalwareAnalysis.timestamp}
+								desc={truncatedMalwareAnalysis}
 								linkToAll="/malware-analyses"
 								linkText="View all malware analyses."
 								linkToMore={`/malware-analyses/${
@@ -131,8 +136,9 @@ const Landing = () => {
 								subtitle={latestWeeklyBlog.title}
 								imageSrc={latestWeeklyBlog.image.src}
 								imageAlt={latestWeeklyBlog.image.alt}
-								desc={truncatedWeeklyBlog}
+								author={latestWeeklyBlog.author}
 								timestamp={latestWeeklyBlog.timestamp}
+								desc={truncatedWeeklyBlog}
 								linkToAll="/weekly-blogs"
 								linkText="View all weekly blogs."
 								linkToMore={`/weekly-blogs/${

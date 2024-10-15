@@ -13,9 +13,183 @@ export const threatReports = [
 			src: THREAT_REPORT_IMAGE_CARD,
 			alt: "Threat Report",
 		},
-		link: "",
 		author: "Xnrrrrrr",
 		timestamp: "October 13, 2024",
+		rating: 3.4,
+		content: [
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+		],
+	},
+	{
+		title: "Report title",
+		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
+		image: {
+			src: THREAT_REPORT_IMAGE_CARD,
+			alt: "Threat Report",
+		},
+		author: "Xnrrrrrr",
+		timestamp: "October 14, 2024",
+		rating: 3.4,
+		content: [
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+		],
+	},
+	{
+		title: "Report title",
+		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
+		image: {
+			src: THREAT_REPORT_IMAGE_CARD,
+			alt: "Threat Report",
+		},
+		author: "Xnrrrrrr",
+		timestamp: "October 13, 2024",
+		rating: 3.4,
+		content: [
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+		],
+	},
+	{
+		title: "Report title",
+		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
+		image: {
+			src: THREAT_REPORT_IMAGE_CARD,
+			alt: "Threat Report",
+		},
+		author: "Xnrrrrrr",
+		timestamp: "October 14, 2024",
+		rating: 3.4,
+		content: [
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+		],
+	},
+	{
+		title: "Report title",
+		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
+		image: {
+			src: THREAT_REPORT_IMAGE_CARD,
+			alt: "Threat Report",
+		},
+		author: "Xnrrrrrr",
+		timestamp: "October 13, 2024",
+		rating: 3.4,
+		content: [
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+		],
+	},
+	{
+		title: "Report title",
+		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
+		image: {
+			src: THREAT_REPORT_IMAGE_CARD,
+			alt: "Threat Report",
+		},
+		author: "Xnrrrrrr",
+		timestamp: "October 14, 2024",
 		rating: 3.4,
 		content: [
 			{
@@ -52,7 +226,6 @@ export const toolReviews = [
 			src: JWT_TOOL_IMAGE_CARD,
 			alt: "Tool Review",
 		},
-		link: "",
 		author: "Xnrrrrrr",
 		timestamp: "October 13, 2024",
 		rating: 3.4,
@@ -91,7 +264,6 @@ export const caseStudies = [
 			src: CASE_STUDY1_IMAGE_CARD,
 			alt: "Case Study",
 		},
-		link: "",
 		author: "Xnrrrrrr",
 		timestamp: "October 13, 2024",
 		rating: 3.4,
@@ -130,7 +302,6 @@ export const threatProfiles = [
 			src: THREAT_PROFILE1_IMAGE_CARD,
 			alt: "Threat Profile",
 		},
-		link: "",
 		author: "Xnrrrrrr",
 		timestamp: "October 13, 2024",
 		rating: 3.4,
@@ -169,7 +340,6 @@ export const malwareAnalyses = [
 			src: THREAT_REPORT_IMAGE_CARD,
 			alt: "Malware Analysis",
 		},
-		link: "",
 		author: "Xnrrrrrr",
 		timestamp: "October 13, 2024",
 		rating: 3.4,
@@ -208,7 +378,6 @@ export const weeklyBlog = [
 			src: WEEK1_BLOG_IMAGE_CARD,
 			alt: "Weekly Blog",
 		},
-		link: "",
 		author: "Xnrrrrrr",
 		timestamp: "October 13, 2024",
 		rating: 3.4,
