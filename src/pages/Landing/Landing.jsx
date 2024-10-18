@@ -1,7 +1,7 @@
 import { Graces, Header, LandingCard, Footer } from "./../../components";
 import { Link } from "react-router-dom";
 import {
-	threatReports,
+	breachReports,
 	toolReviews,
 	caseStudies,
 	threatProfiles,
@@ -10,11 +10,11 @@ import {
 } from "../../content.js";
 
 const Landing = () => {
-	const latestThreatReport = threatReports[threatReports.length - 1];
+	const latestBreachReport = breachReports[breachReports.length - 1];
 	const truncatedThreatDesc =
-		latestThreatReport.desc.length > 100
-			? `${latestThreatReport.desc.slice(0, 100)}...`
-			: latestThreatReport.desc;
+		latestBreachReport.desc.length > 100
+			? `${latestBreachReport.desc.slice(0, 100)}...`
+			: latestBreachReport.desc;
 
 	const lastestToolReview = toolReviews[toolReviews.length - 1];
 	const truncatedToolReview =
@@ -63,17 +63,17 @@ const Landing = () => {
 						<h2 className="section-title">Featured Content</h2>
 						<div className="featured-content">
 							<LandingCard
-								title="Latest Threat Report"
-								subtitle={latestThreatReport.title}
-								imageSrc={latestThreatReport.image.src}
-								imageAlt={latestThreatReport.image.alt}
-								author={latestThreatReport.author}
-								timestamp={latestThreatReport.timestamp}
+								title="Latest Breach Report"
+								subtitle={latestBreachReport.title}
+								imageSrc={latestBreachReport.image.src}
+								imageAlt={latestBreachReport.image.alt}
+								author={latestBreachReport.author}
+								timestamp={latestBreachReport.timestamp}
 								desc={truncatedThreatDesc}
-								linkToAll="/threat-reports"
-								linkText="View all threat reports."
-								linkToMore={`/threat-reports/${
-									threatReports.length - 1
+								linkToAll="/breach-reports"
+								linkText="View all breach reports."
+								linkToMore={`/breach-reports/${
+									breachReports.length - 1
 								}`}
 							/>
 							<LandingCard
@@ -90,20 +90,7 @@ const Landing = () => {
 									toolReviews.length - 1
 								}`}
 							/>
-							<LandingCard
-								title="Latest Case Study"
-								subtitle={latestCaseStudy.title}
-								imageSrc={latestCaseStudy.image.src}
-								imageAlt={latestCaseStudy.image.alt}
-								author={latestCaseStudy.author}
-								timestamp={latestCaseStudy.timestamp}
-								desc={truncatedCaseStudy}
-								linkToAll="/case-studies"
-								linkText="View all case studies."
-								linkToMore={`/case-studies/${
-									caseStudies.length - 1
-								}`}
-							/>
+							
 							<LandingCard
 								title="Threat Profiles"
 								subtitle={latestThreatProfiles.title}
@@ -146,6 +133,22 @@ const Landing = () => {
 									weeklyBlog.length - 1
 								}`}
 							/>
+							<LandingCard
+								title="Crack Me"
+								subtitle={latestCaseStudy.title}
+								imageSrc={latestCaseStudy.image.src}
+								imageAlt={latestCaseStudy.image.alt}
+								author={latestCaseStudy.author}
+								timestamp={latestCaseStudy.timestamp}
+								desc={truncatedCaseStudy}
+								linkToAll="/case-studies"
+								linkText="View all case studies."
+								linkToMore={`/case-studies/${
+									caseStudies.length - 1
+								}`}
+							/>
+							
+							
 						</div>
 					</section>
 					<section className="about-section">

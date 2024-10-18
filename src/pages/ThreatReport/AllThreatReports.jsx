@@ -1,6 +1,6 @@
 import React from "react";
 import { Header, Footer } from "./../../components";
-import { threatReports } from "../../content.js";
+import { breachReports } from "../../content.js";
 import { Link } from "react-router-dom";
 
 const AllThreatReports = () => {
@@ -12,7 +12,7 @@ const AllThreatReports = () => {
 				<div className="sorter">Sort by...</div>
 				<input type="text" placeholder="~$Search..." />
 				<div className="threat-report-container">
-					{threatReports.map((t, index) => (
+					{breachReports.map((t, index) => (
 						<React.Fragment key={index}>
 							<Link to={`/threat-reports/${index}`}>
 								<img src={t.image.src} alt={t.image.alt} />

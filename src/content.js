@@ -3,15 +3,87 @@ import THREAT_REPORT_IMAGE_CARD from "./assets/threatReports/threatReport/THREAT
 import WEEK1_BLOG_IMAGE_CARD from "./assets/weeklyBlogs/WEEK1/WEEK1_BLOG_IMAGE_CARD.jpg";
 import CASE_STUDY1_IMAGE_CARD from "./assets/caseStudies/caseStudy1/CASE_STUDY1_IMAGE_CARD.jpg";
 import THREAT_PROFILE1_IMAGE_CARD from "./assets/threatProfiles/threatProfile1/THREAT_PROFILE1_IMAGE_CARD.png";
+import MALWARE_ANALYSIS1_IMAGE_CARD from "./assets/malwareAnalyses/malwareAnalysis1/MALWARE_ANALYSIS1_IMAGE_CARD.png";
 
 
-export const threatReports = [
+
+export const breachReports = [
 	{
 		title: "Report title",
 		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
 		image: {
 			src: THREAT_REPORT_IMAGE_CARD,
-			alt: "Threat Report",
+			alt: "Breach Report",
+		},
+		author: "Xnrrrrrr",
+		timestamp: "October 13, 2024",
+		rating: 3.4,
+		content: [
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+		],
+	},
+	{
+		title: "Report title",
+		desc: "This is a brief description that will summarize the breach report. This will get cut off at 100 characters for the landing page.",
+		image: {
+			src: THREAT_REPORT_IMAGE_CARD,
+			alt: "Breach Report",
+		},
+		author: "Xnrrrrrr",
+		timestamp: "October 14, 2024",
+		rating: 3.4,
+		content: [
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: "",
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+		],
+	},
+	{
+		title: "Report title",
+		desc: "This is a brief description that will summarize the breach report. This will get cut off at 100 characters for the landing page.",
+		image: {
+			src: THREAT_REPORT_IMAGE_CARD,
+			alt: "Breach Report",
 		},
 		author: "Xnrrrrrr",
 		timestamp: "October 13, 2024",
@@ -46,7 +118,7 @@ export const threatReports = [
 		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
 		image: {
 			src: THREAT_REPORT_IMAGE_CARD,
-			alt: "Threat Report",
+			alt: "Breach Report",
 		},
 		author: "Xnrrrrrr",
 		timestamp: "October 14, 2024",
@@ -81,7 +153,7 @@ export const threatReports = [
 		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
 		image: {
 			src: THREAT_REPORT_IMAGE_CARD,
-			alt: "Threat Report",
+			alt: "Breach Report",
 		},
 		author: "Xnrrrrrr",
 		timestamp: "October 13, 2024",
@@ -116,77 +188,7 @@ export const threatReports = [
 		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
 		image: {
 			src: THREAT_REPORT_IMAGE_CARD,
-			alt: "Threat Report",
-		},
-		author: "Xnrrrrrr",
-		timestamp: "October 14, 2024",
-		rating: 3.4,
-		content: [
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: "",
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: "",
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-		],
-	},
-	{
-		title: "Report title",
-		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
-		image: {
-			src: THREAT_REPORT_IMAGE_CARD,
-			alt: "Threat Report",
-		},
-		author: "Xnrrrrrr",
-		timestamp: "October 13, 2024",
-		rating: 3.4,
-		content: [
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: "",
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: "",
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-		],
-	},
-	{
-		title: "Report title",
-		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
-		image: {
-			src: THREAT_REPORT_IMAGE_CARD,
-			alt: "Threat Report",
+			alt: "Breach Report",
 		},
 		author: "Xnrrrrrr",
 		timestamp: "October 14, 2024",
@@ -337,7 +339,7 @@ export const malwareAnalyses = [
 		title: "Malware Analysis Title",
 		desc: "This is a brief description that will summarize the malware. This will get cut off at 100 characters for the landing page.",
 		image: {
-			src: THREAT_REPORT_IMAGE_CARD,
+			src: MALWARE_ANALYSIS1_IMAGE_CARD,
 			alt: "Malware Analysis",
 		},
 		author: "Xnrrrrrr",
