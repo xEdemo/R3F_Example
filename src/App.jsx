@@ -12,6 +12,7 @@ import "./components/Graces/Graces.css";
 import "./components/Header/Header.css";
 import "./components/Cards/Landing/LandingCard.css";
 import "./components/Footer/Footer.css";
+import "./components/StarRating/StarRating.css";
 
 const App = () => {
 	return (

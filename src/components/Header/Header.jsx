@@ -26,16 +26,22 @@ const Header = () => {
 						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<Link>Threat Reports</Link>
+						<Link to="/threat-reports">Threat Reports</Link>
 					</li>
 					<li>
-						<Link>Tool Reviews</Link>
+						<Link to="/tool-reviews">Tool Reviews</Link>
 					</li>
 					<li>
-						<Link>Weekly Blog</Link>
+						<Link to="/case-studies">Case Studies</Link>
 					</li>
 					<li>
-						<Link>Case Studies</Link>
+						<Link to="/threat-profiles">Threat Profiles</Link>
+					</li>
+					<li>
+						<Link to="/malware-analyses">Malware Analyses</Link>
+					</li>
+					<li>
+						<Link to="/weekly-blogs">Weekly Blogs</Link>
 					</li>
 					<li>
 						<Link>CrackMe</Link>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Footer } from "./../../components";
+import { Header, Footer, StarRating } from "./../../components";
 import { breachReports } from "../../content.js";
 import { Link } from "react-router-dom";
 
@@ -18,7 +18,10 @@ const AllThreatReports = () => {
 								<img src={t.image.src} alt={t.image.alt} />
 								<div>
 									<h3>{t.title}</h3>
-									<b>Written by: Xnrrrrrr</b>
+									<b>Written by: {t.author}</b> <br/>
+									<b>{t.timestamp}</b>
+									<p>{t.desc}</p>
+									<StarRating rating={t.rating} />
 								</div>
 							</Link>
 						</React.Fragment>
