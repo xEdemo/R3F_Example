@@ -1,11 +1,14 @@
 .background {
 	width: 100%;
+	min-height: calc(100vh - 50px);
 	height: calc(100% - 50px);
-	max-height: 100vh;
 	position: relative;
 	background-color: rgb(55, 0, 0);
 	top: 50px;
 	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .background h1 {
@@ -33,6 +36,7 @@
 
 .threat-report-container {
 	display: flex;
+	flex-grow: 1;
 	flex-wrap: wrap;
 	justify-content: center;
 }

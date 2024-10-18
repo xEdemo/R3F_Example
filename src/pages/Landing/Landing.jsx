@@ -51,7 +51,7 @@ const Landing = () => {
 			<Header />
 			{/* Content */}
 			<div className="landing-background">
-				<>
+				<div>
 					<section className="hero-section">
 						<div className="hero-content">
 							<h1>Welcome to </h1>
@@ -90,7 +90,7 @@ const Landing = () => {
 									toolReviews.length - 1
 								}`}
 							/>
-							
+
 							<LandingCard
 								title="Threat Profiles"
 								subtitle={latestThreatProfiles.title}
@@ -147,8 +147,6 @@ const Landing = () => {
 									caseStudies.length - 1
 								}`}
 							/>
-							
-							
 						</div>
 					</section>
 					<section className="about-section">
@@ -161,8 +159,8 @@ const Landing = () => {
 							</p>
 						</div>
 					</section>
-					<Footer />
-				</>
+				</div>
+				<Footer />
 			</div>
 			<Graces />
 		</>
