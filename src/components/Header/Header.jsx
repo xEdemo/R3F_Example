@@ -46,6 +46,9 @@ const Header = () => {
 					<li>
 						<Link>CrackMe</Link>
 					</li>
+					<li>
+						<Link to="/meatus">Meatus</Link>
+					</li>
 				</ul>
 			</nav>
 		</div>

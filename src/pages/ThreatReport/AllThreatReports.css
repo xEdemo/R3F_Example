@@ -2,7 +2,7 @@
 	width: 100%;
 	height: calc(100% - 50px);
 	max-height: 100vh;
-	position: absolute;
+	position: relative;
 	background-color: rgb(55, 0, 0);
 	top: 50px;
 	overflow-y: auto;
@@ -34,6 +34,7 @@
 .threat-report-container {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .threat-report-container img {
@@ -49,14 +50,14 @@
 	background-color: rgb(53, 53, 53);
 	text-decoration: none;
 }
-
+/* 
 .threat-report-container a:first-child {
 	margin-top: 1rem;
-}
+} */
 
-.threat-report-container a:last-child {
+/* .threat-report-container a:last-child {
 	margin-bottom: 1rem;
-}
+} */
 
 .threat-report-container h3 {
 	font-size: 2rem;

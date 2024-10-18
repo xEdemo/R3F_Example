@@ -10,6 +10,7 @@ import {
 
 // Pages:
 import { Landing, AllThreatReports } from "./pages";
+import Meatus from "./pages/Meatus/Meatus.jsx";
 
 // Components:
 
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
         <Route path="/" element={<App />}>
             <Route path="/" index={true} element={<Landing />} />
             <Route path="/threat-reports" element={<AllThreatReports />} />
+            <Route path="/meatus" element={<Meatus />} />
         </Route>
     )
 );

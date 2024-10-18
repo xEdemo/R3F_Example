@@ -27,41 +27,6 @@ const AllThreatReports = () => {
 						</React.Fragment>
 					))}
 				</div>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
-				<p>hi</p>
 				<Footer />
 			</div>
 		</>

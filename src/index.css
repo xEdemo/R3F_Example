@@ -92,3 +92,11 @@ a:hover {
 	text-decoration: underline;
 	cursor: pointer;
 }
+
+b {
+	font-weight: bolder;
+}
+
+i {
+	text-decoration: wavy;
+}
