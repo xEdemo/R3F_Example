@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 import { Header, Footer } from "../../components";
 import { ResponsiveBar } from "@nivo/bar";
 import { ResponsivePie } from "@nivo/pie";
-import { ResponsiveRadar } from "@nivo/radar";
-import { log } from "three/examples/jsm/nodes/Nodes.js";
 
 const Meatus = () => {
 	const [vulnerabilities, setVulnerabilities] = useState({

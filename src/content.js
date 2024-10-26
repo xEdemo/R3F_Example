@@ -5,7 +5,15 @@ import CASE_STUDY1_IMAGE_CARD from "./assets/caseStudies/caseStudy1/CASE_STUDY1_
 import THREAT_PROFILE1_IMAGE_CARD from "./assets/threatProfiles/threatProfile1/THREAT_PROFILE1_IMAGE_CARD.png";
 import MALWARE_ANALYSIS1_IMAGE_CARD from "./assets/malwareAnalyses/malwareAnalysis1/MALWARE_ANALYSIS1_IMAGE_CARD.png";
 
-
+const programmingLanguage = {
+	asm6502: "language-asm6502",
+	c: "language-c",
+	css: "language-css",
+	html: "language-cshtml",
+	java: "language-java",
+	js: "language-javascript",
+	python: "language-python",
+}
 
 export const breachReports = [
 	{
@@ -20,10 +28,31 @@ export const breachReports = [
 		rating: 3.4,
 		content: [
 			{
-				p: "",
+				header: "My Content Here",
+				p: "The following code was used in this website to give you a better user experience.",
 				code: {
-					lang: "",
-					content: "",
+					lang: programmingLanguage.css,
+					content: 
+`.background {
+	width: 100%;
+	min-height: calc(100vh - 50px);
+	height: calc(100% - 50px);
+	position: relative;
+	background-color: rgb(55, 0, 0);
+	top: 50px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+code {
+	all: unset;
+	font-family: monospace; /* Reapply the default monospace font */
+	background-color: initial;
+	color: initial;
+	width: 100%;
+}`,
 				},
 				image: {
 					src: "",
@@ -31,189 +60,15 @@ export const breachReports = [
 				},
 			},
 			{
-				p: "",
+				header: "",
+				p: "Now, wasn't that nice of me?",
 				code: {
 					lang: "",
 					content: "",
 				},
 				image: {
-					src: "",
-					alt: "",
-				},
-			},
-		],
-	},
-	{
-		title: "Report title",
-		desc: "This is a brief description that will summarize the breach report. This will get cut off at 100 characters for the landing page.",
-		image: {
-			src: THREAT_REPORT_IMAGE_CARD,
-			alt: "Breach Report",
-		},
-		author: "Xnrrrrrr",
-		timestamp: "October 14, 2024",
-		rating: 3.4,
-		content: [
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: "",
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: "",
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-		],
-	},
-	{
-		title: "Report title",
-		desc: "This is a brief description that will summarize the breach report. This will get cut off at 100 characters for the landing page.",
-		image: {
-			src: THREAT_REPORT_IMAGE_CARD,
-			alt: "Breach Report",
-		},
-		author: "Xnrrrrrr",
-		timestamp: "October 13, 2024",
-		rating: 3.4,
-		content: [
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: "",
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: "",
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-		],
-	},
-	{
-		title: "Report title",
-		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
-		image: {
-			src: THREAT_REPORT_IMAGE_CARD,
-			alt: "Breach Report",
-		},
-		author: "Xnrrrrrr",
-		timestamp: "October 14, 2024",
-		rating: 3.4,
-		content: [
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: "",
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: "",
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-		],
-	},
-	{
-		title: "Report title",
-		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
-		image: {
-			src: THREAT_REPORT_IMAGE_CARD,
-			alt: "Breach Report",
-		},
-		author: "Xnrrrrrr",
-		timestamp: "October 13, 2024",
-		rating: 3.4,
-		content: [
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: "",
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: "",
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-		],
-	},
-	{
-		title: "Report title",
-		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
-		image: {
-			src: THREAT_REPORT_IMAGE_CARD,
-			alt: "Breach Report",
-		},
-		author: "Xnrrrrrr",
-		timestamp: "October 14, 2024",
-		rating: 3.4,
-		content: [
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: "",
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: "",
-				},
-				image: {
-					src: "",
-					alt: "",
+					src: THREAT_PROFILE1_IMAGE_CARD,
+					alt: "Big worm",
 				},
 			},
 		],

@@ -100,3 +100,24 @@ b {
 i {
 	text-decoration: wavy;
 }
+
+.background {
+	width: 100%;
+	min-height: calc(100vh - 50px);
+	height: calc(100% - 50px);
+	position: relative;
+	background-color: rgb(55, 0, 0);
+	top: 50px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+code {
+	all: unset;
+	font-family: monospace;
+    background-color: initial;
+    color: initial;
+	width: 100%;
+}

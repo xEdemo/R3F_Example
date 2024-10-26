@@ -1,0 +1,15 @@
+.breach-report-content {
+	padding: 1rem;
+}
+
+.breach-report-content h3 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 2rem;
+	font-weight: bolder;
+}
+
+.breach-report-written-by {
+	width: 100%;
+	text-align: right;
+}

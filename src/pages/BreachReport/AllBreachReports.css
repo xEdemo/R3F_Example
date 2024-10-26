@@ -1,16 +1,3 @@
-.background {
-	width: 100%;
-	min-height: calc(100vh - 50px);
-	height: calc(100% - 50px);
-	position: relative;
-	background-color: rgb(55, 0, 0);
-	top: 50px;
-	overflow-y: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
 .background h1 {
 	font-size: 2.5rem;
 	color: #a0a0a0;
@@ -26,44 +13,63 @@
 	border: 2px solid rgb(22, 22, 22);
 }
 
-/* .threat-report-container {
+/* .breach-report-container {
 	transition: transform 0.3s ease;
 }
 
-.threat-report-container:hover {
+.breach-report-container:hover {
 	transform: translateY(-10px);
 } */
 
-.threat-report-container {
+.breach-report-container {
 	display: flex;
 	flex-grow: 1;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.threat-report-container img {
+.breach-report-container img {
 	border-top-left-radius: 1.5rem;
 	border-bottom-left-radius: 1.5rem;
+	width: 280px;
+	height: 280px;
 }
 
-.threat-report-container a {
+.breach-report-container h3 {
+	text-align: center;
+}
+
+.breach-report-container p {
+	padding-top: 1rem;
+}
+
+.breach-report-container > div {
 	display: flex;
+	position: relative;
 	width: 600px;
 	margin: 2rem 2rem;
 	border-radius: 1.5rem;
 	background-color: rgb(53, 53, 53);
 	text-decoration: none;
 }
+
+.breach-report-container > div > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 1rem;
+}
+
 /* 
-.threat-report-container a:first-child {
+.breach-report-container a:first-child {
 	margin-top: 1rem;
 } */
 
-/* .threat-report-container a:last-child {
+/* .breach-report-container a:last-child {
 	margin-bottom: 1rem;
 } */
 
-.threat-report-container h3 {
+.breach-report-container h3 {
 	font-size: 2rem;
 	color: #918f8f;
 }

@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 // Pages:
-import { Landing, AllThreatReports } from "./pages";
+import { Landing, AllBreachReports, BreachReport } from "./pages";
 import Meatus from "./pages/Meatus/Meatus.jsx";
 
 // Components:
@@ -18,7 +18,8 @@ const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<App />}>
             <Route path="/" index={true} element={<Landing />} />
-            <Route path="/threat-reports" element={<AllThreatReports />} />
+            <Route path="/breach-reports" element={<AllBreachReports />} />
+			<Route path="/breach-reports/:index" element={<BreachReport />} />
             <Route path="/meatus" element={<Meatus />} />
         </Route>
     )

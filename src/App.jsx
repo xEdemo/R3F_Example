@@ -2,10 +2,12 @@ import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 // CSS Here
 import "./index.css";
+import "prismjs/themes/prism-okaidia.css";
 
 // Pages
 import "./pages/Landing/Landing.css";
-import "./pages/ThreatReport/AllThreatReports.css";
+import "./pages/BreachReport/AllBreachReports.css";
+import "./pages/BreachReport/BreachReport.css";
 
 // Components
 import "./components/Graces/Graces.css";
