@@ -5,6 +5,7 @@ import CASE_STUDY1_IMAGE_CARD from "./assets/caseStudies/caseStudy1/CASE_STUDY1_
 import THREAT_PROFILE1_IMAGE_CARD from "./assets/threatProfiles/threatProfile1/THREAT_PROFILE1_IMAGE_CARD.png";
 import MALWARE_ANALYSIS1_IMAGE_CARD from "./assets/malwareAnalyses/malwareAnalysis1/MALWARE_ANALYSIS1_IMAGE_CARD.png";
 
+// Needed for syntax highlighting
 const programmingLanguage = {
 	asm6502: "language-asm6502",
 	c: "language-c",
@@ -64,10 +65,11 @@ code {
 				p: "Now, wasn't that nice of me?",
 				code: {
 					lang: "",
-					content: "",
+					content: 
+``,
 				},
 				image: {
-					src: THREAT_PROFILE1_IMAGE_CARD,
+					src: THREAT_REPORT_IMAGE_CARD,
 					alt: "Big worm",
 				},
 			},
@@ -91,7 +93,8 @@ export const toolReviews = [
 				p: "",
 				code: {
 					lang: "",
-					content: "",
+					content: 
+``,
 				},
 				image: {
 					src: "",
@@ -102,7 +105,8 @@ export const toolReviews = [
 				p: "",
 				code: {
 					lang: "",
-					content: "",
+					content: 
+``,
 				},
 				image: {
 					src: "",
@@ -129,7 +133,8 @@ export const caseStudies = [
 				p: "",
 				code: {
 					lang: "",
-					content: "",
+					content: 
+``,
 				},
 				image: {
 					src: "",
@@ -140,7 +145,8 @@ export const caseStudies = [
 				p: "",
 				code: {
 					lang: "",
-					content: "",
+					content: 
+``,
 				},
 				image: {
 					src: "",
@@ -167,7 +173,8 @@ export const threatProfiles = [
 				p: "",
 				code: {
 					lang: "",
-					content: "",
+					content: 
+``,
 				},
 				image: {
 					src: "",
@@ -178,7 +185,8 @@ export const threatProfiles = [
 				p: "",
 				code: {
 					lang: "",
-					content: "",
+					content: 
+``,
 				},
 				image: {
 					src: "",
@@ -205,7 +213,8 @@ export const malwareAnalyses = [
 				p: "",
 				code: {
 					lang: "",
-					content: "",
+					content: 
+``,
 				},
 				image: {
 					src: "",
@@ -216,7 +225,8 @@ export const malwareAnalyses = [
 				p: "",
 				code: {
 					lang: "",
-					content: "",
+					content: 
+``,
 				},
 				image: {
 					src: "",
@@ -243,7 +253,8 @@ export const weeklyBlog = [
 				p: "",
 				code: {
 					lang: "",
-					content: "",
+					content: 
+``,
 				},
 				image: {
 					src: "",
@@ -254,7 +265,8 @@ export const weeklyBlog = [
 				p: "",
 				code: {
 					lang: "",
-					content: "",
+					content: 
+``,
 				},
 				image: {
 					src: "",

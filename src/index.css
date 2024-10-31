@@ -114,10 +114,18 @@ i {
 	justify-content: space-between;
 }
 
-code {
-	all: unset;
-	font-family: monospace;
-    background-color: initial;
-    color: initial;
-	width: 100%;
+.background h1 {
+	font-size: 2.5rem;
+	padding: 1rem 0rem;
+	color: #a0a0a0;
+	text-align: center;
+}
+
+.background input {
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 0.5rem;
+}
+
+.background input:focus {
+	border: 2px solid rgb(22, 22, 22);
 }

@@ -1,0 +1,28 @@
+.report-content {
+	padding: 0rem 0rem 1rem;
+	width: 1000px;
+	margin: 0rem auto;
+}
+
+.report-content h3 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 2rem;
+	font-weight: bolder;
+}
+
+.report-content img {
+	padding: 1rem 0rem;
+	filter: grayscale(10%);
+}
+
+.report-content-written-by {
+	width: 100%;
+	text-align: right;
+}
+
+.report-content-image-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}

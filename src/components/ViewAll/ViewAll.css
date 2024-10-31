@@ -1,0 +1,43 @@
+.reports-container {
+	display: flex;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.reports-container img {
+	border-top-left-radius: 1.5rem;
+	border-bottom-left-radius: 1.5rem;
+	width: 280px;
+	height: 280px;
+}
+
+.reports-container h3 {
+	text-align: center;
+}
+
+.reports-container p {
+	padding-top: 1rem;
+}
+
+.reports-container > div {
+	display: flex;
+	position: relative;
+	width: 600px;
+	margin: 2rem 2rem;
+	border-radius: 1.5rem;
+	background-color: rgb(53, 53, 53);
+	text-decoration: none;
+}
+
+.reports-container > div > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 1rem;
+}
+
+.reports-container h3 {
+	font-size: 2rem;
+	color: #918f8f;
+}

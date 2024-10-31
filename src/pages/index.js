@@ -1,9 +1,9 @@
-import Landing from './Landing/Landing.jsx';
-import AllBreachReports from './BreachReport/AllBreachReports.jsx';
-import BreachReport from './BreachReport/BreachReport.jsx';
+import Landing from "./Landing/Landing.jsx";
+import ReportList from "./Reports/ReportList.jsx";
+import ReportDetail from "./Reports/ReportDetail.jsx";
 
 export {
 	Landing,
-	AllBreachReports,
-	BreachReport,
+	ReportList,
+	ReportDetail,
 };
