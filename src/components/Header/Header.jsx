@@ -1,58 +1,42 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+	const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setDropdownOpen(!isDropdownOpen);
+    };
 	return (
-		<div
-			style={{
-				backgroundColor: "rgba(50, 50, 50, 0.8)",
-				width: "100%",
-				height: "50px",
-				position: "absolute",
-				boxShadow: "0px 0px 5px black",
-				zIndex: 100,
-			}}
-		>
-			<nav className="web-header">
-				<ul
-					style={{
-						display: "flex",
-						justifyContent: "space-evenly",
-						textAlign: "center",
-						alignItems: "center",
-						height: "50px",
-					}}
-				>
-					<li>
-						<Link to="/">Home</Link>
-					</li>
-					<li>
-						<Link to="/breach-reports">Breach Reports</Link>
-					</li>
-					<li>
-						<Link to="/tool-reviews">Tool Reviews</Link>
-					</li>
-					<li>
-						<Link to="/case-studies">Case Studies</Link>
-					</li>
-					<li>
-						<Link to="/threat-profiles">Threat Profiles</Link>
-					</li>
-					<li>
-						<Link to="/malware-analyses">Malware Analyses</Link>
-					</li>
-					<li>
-						<Link to="/weekly-blogs">Weekly Blogs</Link>
-					</li>
-					<li>
-						<Link>CrackMe</Link>
-					</li>
-					<li>
-						<Link to="/meatus">Meatus</Link>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	);
+        <div className="header-container">
+            <nav className="web-header">
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                </ul>
+                <ul>
+                    <li className="dropdown">
+                        <button onClick={toggleDropdown} className="dropdown-button">
+                            More
+                        </button>
+                        {isDropdownOpen && (
+                            <div className="dropdown-content">
+                                <Link to="/breach-reports">Breach Reports</Link>
+                                <Link to="/tool-reviews">Tool Reviews</Link>
+                                <Link to="/case-studies">Case Studies</Link>
+                                <Link to="/threat-profiles">Threat Profiles</Link>
+                                <Link to="/malware-analyses">Malware Analyses</Link>
+                                <Link to="/weekly-blogs">Weekly Blogs</Link>
+                                <Link>CrackMe</Link>
+                                <Link to="/meatus">Meatus</Link>
+                            </div>
+                        )}
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    );
 };
 
 export default Header;

@@ -8,7 +8,6 @@ import "prismjs/themes/prism-okaidia.css";
 import "./pages/Landing/Landing.css";
 
 // Components
-import "./components/Graces/Graces.css";
 import "./components/Header/Header.css";
 import "./components/Cards/Landing/LandingCard.css";
 import "./components/Footer/Footer.css";

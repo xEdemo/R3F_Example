@@ -1,4 +1,4 @@
-import { Graces, Header, LandingCard, Footer } from "./../../components";
+import { Header, LandingCard, Footer } from "./../../components";
 import { Link } from "react-router-dom";
 import {
 	breachReports,
@@ -50,12 +50,12 @@ const Landing = () => {
 		<>
 			<Header />
 			{/* Content */}
-			<div className="landing-background">
+			<div className="landing-background background">
 				<div>
 					<section className="hero-section">
 						<div className="hero-content">
-							<h1>Welcome to </h1>
-							<h2>The Public Eye</h2>
+							<img className="hero-img" src="/src/assets/general/hero-img.png" alt="hero" />
+							<h1>LV</h1>
 							<p>Discover the latest insights and more.</p>
 						</div>
 					</section>
@@ -77,7 +77,7 @@ const Landing = () => {
 								}`}
 							/>
 							<LandingCard
-								title="Latest Tool Review"
+								title="HTB Writeups"
 								subtitle={lastestToolReview.title}
 								imageSrc={lastestToolReview.image.src}
 								imageAlt={lastestToolReview.image.alt}
@@ -90,8 +90,7 @@ const Landing = () => {
 									toolReviews.length - 1
 								}`}
 							/>
-
-							<LandingCard
+							{/* <LandingCard
 								title="Threat Profiles"
 								subtitle={latestThreatProfiles.title}
 								imageSrc={latestThreatProfiles.image.src}
@@ -104,8 +103,8 @@ const Landing = () => {
 								linkToMore={`/threat-profiles/${
 									threatProfiles.length - 1
 								}`}
-							/>
-							<LandingCard
+							/> */}
+							{/* <LandingCard
 								title="Latest Malware Analysis"
 								subtitle={latestMalwareAnalysis.title}
 								imageSrc={latestMalwareAnalysis.image.src}
@@ -118,7 +117,7 @@ const Landing = () => {
 								linkToMore={`/malware-analyses/${
 									malwareAnalyses.length - 1
 								}`}
-							/>
+							/> */}
 							<LandingCard
 								title="Weekly Blog"
 								subtitle={latestWeeklyBlog.title}
@@ -162,7 +161,6 @@ const Landing = () => {
 				</div>
 				<Footer />
 			</div>
-			<Graces />
 		</>
 	);
 };

@@ -58,6 +58,17 @@ input[type="radio"] {
 	overflow: auto;
 
 	/* Themes: */
+	--base-background-color:  #071B2A;
+
+	--panel-color: rgb(7, 27, 42);
+	--panel-color-transparent: rgba(7, 27, 42, 0.75);
+	--card-shadow: #05202C;
+
+	--header-color: #418596;
+
+	--primary-text-color: #E6E6E6;
+	--secondary-text-color: #8A8F94;
+	--h1-text-color:  #3BB6D5;
 }
 
 html,
@@ -69,12 +80,7 @@ body,
 
 body {
 	/* overflow: hidden; */
-	background: black;
-	background: radial-gradient(
-		circle at bottom center,
-		rgba(60, 60, 60, 1) 0%,
-		rgba(0, 0, 0, 1) 58%
-	);
+
 }
 
 li,
@@ -103,21 +109,27 @@ i {
 
 .background {
 	width: 100%;
-	min-height: calc(100vh - 50px);
-	height: calc(100% - 50px);
+	min-height: 100vh;
+	height: 100%;
 	position: relative;
-	background-color: rgb(55, 0, 0);
-	top: 50px;
+	background-color: var(--base-background-color);
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0)), url("../src/assets/general/TUFF.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	/* background-color: rgba(50, 0, 0, 0.25); */
 	overflow-y: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	padding-top: 50px;
 }
 
-.background h1 {
-	font-size: 2.5rem;
+h1 {
+	font-size: 3.5rem;
 	padding: 1rem 0rem;
-	color: #a0a0a0;
+	color: var(--primary-text-color);
+	text-shadow: 0 0 6px rgba(59,182,213,0.4);
 	text-align: center;
 }
 

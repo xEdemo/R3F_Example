@@ -75,6 +75,65 @@ code {
 			},
 		],
 	},
+	{
+		title: "Report title",
+		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
+		image: {
+			src: THREAT_REPORT_IMAGE_CARD,
+			alt: "Breach Report",
+		},
+		author: "Xnrrrrrr",
+		timestamp: "October 13, 2024",
+		rating: 3.4,
+		content: [
+			{
+				header: "My Content Here",
+				p: "The following code was used in this website to give you a better user experience.",
+				code: {
+					lang: programmingLanguage.css,
+					content: 
+`.background {
+	width: 100%;
+	min-height: calc(100vh - 50px);
+	height: calc(100% - 50px);
+	position: relative;
+	background-color: rgb(55, 0, 0);
+	top: 50px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+code {
+	all: unset;
+	font-family: monospace; /* Reapply the default monospace font */
+	background-color: initial;
+	color: initial;
+	width: 100%;
+}`,
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+			{
+				header: "",
+				p: "Now, wasn't that nice of me?",
+				code: {
+					lang: "",
+					content: 
+``,
+				},
+				image: {
+					src: THREAT_REPORT_IMAGE_CARD,
+					alt: "Big worm",
+				},
+			},
+		],
+	},
+	
 ];
 
 export const toolReviews = [
