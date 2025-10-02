@@ -128,9 +128,20 @@ i {
 h1 {
 	font-size: 3.5rem;
 	padding: 1rem 0rem;
+	font-weight: bolder;
 	color: var(--primary-text-color);
 	text-shadow: 0 0 6px rgba(59,182,213,0.4);
 	text-align: center;
+}
+
+h2 {
+	font-size: 3rem;
+	color: var(--primary-text-color);
+}
+
+h3 {
+	font-size: 3rem;
+	color: var(--primary-text-color);
 }
 
 .background input {

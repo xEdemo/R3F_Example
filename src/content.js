@@ -1,7 +1,7 @@
-import JWT_TOOL_IMAGE_CARD from "./assets/toolReviews/JWT_TOOL/JWT_TOOL_IMAGE_CARD.png";
-import THREAT_REPORT_IMAGE_CARD from "./assets/threatReports/threatReport/THREAT_REPORT_IMAGE_CARD.png";
-import WEEK1_BLOG_IMAGE_CARD from "./assets/weeklyBlogs/WEEK1/WEEK1_BLOG_IMAGE_CARD.png";
-import CASE_STUDY1_IMAGE_CARD from "./assets/caseStudies/caseStudy1/CASE_STUDY1_IMAGE_CARD.png";
+import ABOUT_ME_L from "./assets/landingCards/about-me-l.png";
+import HTB_WRITEUPS_V from "./assets/landingCards/HTB-writeups-v.png";
+import WEEKLY_BLOG_S from "./assets/landingCards/weekly-blog-s.png";
+import CRACK_ME_WRITEUPS_T from "./assets/landingCards/crack-me-writeups-t.png";
 import THREAT_PROFILE1_IMAGE_CARD from "./assets/threatProfiles/threatProfile1/THREAT_PROFILE1_IMAGE_CARD.png";
 import MALWARE_ANALYSIS1_IMAGE_CARD from "./assets/malwareAnalyses/malwareAnalysis1/MALWARE_ANALYSIS1_IMAGE_CARD.png";
 
@@ -16,12 +16,169 @@ const programmingLanguage = {
 	python: "language-python",
 }
 
+export const staticLandingCards = [
+	{
+		title: "About Me",
+		image: {
+			src: ABOUT_ME_L,
+			alt: "L",
+		},
+		description: "",
+		link: "/about-me",
+	},
+	{
+		title: "HTB Writeups",
+		image: {
+			src: HTB_WRITEUPS_V,
+			alt: "V",
+		},
+		description: "",
+		link: "/htb-writeups",
+	},
+	{
+		title: "Weekly Blog",
+		image: {
+			src: WEEKLY_BLOG_S,
+			alt: "S",
+		},
+		description: "",
+		link: "/weekly-blogs",
+	},
+	{
+		title: "Crack Me Writeups",
+		image: {
+			src: CRACK_ME_WRITEUPS_T,
+			alt: "T",
+		},
+		description: "",
+		link: "/crack-me-writeups",
+	}
+];
+
+export const aboutMe = [
+	{
+		title: "About Me",
+		desc: "Description.",
+		image: {
+			src: ABOUT_ME_L,
+			alt: "L",
+		},
+		author: "Xnrrrrrr",
+		timestamp: "October 13, 2024",
+		content: [
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: 
+``,
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: 
+``,
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+		],
+	}
+];
+
+export const HTBWriteups = [
+	{
+		title: "HTB Writeups",
+		desc: "This is a brief description that will summarize the hack.",
+		image: {
+			src: HTB_WRITEUPS_V,
+			alt: "V",
+		},
+		author: "Xnrrrrrr",
+		timestamp: "October 13, 2024",
+		content: [
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: 
+``,
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: 
+``,
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+		],
+	}
+];
+
+export const crackMeWriteups = [
+	{
+		title: "Crack Me Writeup Title",
+		desc: "This is a brief description that will summarize the crack me.",
+		image: {
+			src: CRACK_ME_WRITEUPS_T,
+			alt: "Crack Me 1",
+		},
+		author: "Xnrrrrrr",
+		timestamp: "October 13, 2024",
+		rating: 3.4,
+		content: [
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: 
+``,
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+			{
+				p: "",
+				code: {
+					lang: "",
+					content: 
+``,
+				},
+				image: {
+					src: "",
+					alt: "",
+				},
+			},
+		],
+	},
+];
+
 export const breachReports = [
 	{
 		title: "Report title",
 		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
 		image: {
-			src: THREAT_REPORT_IMAGE_CARD,
+			src: HTB_WRITEUPS_V,
 			alt: "Breach Report",
 		},
 		author: "Xnrrrrrr",
@@ -69,7 +226,7 @@ code {
 ``,
 				},
 				image: {
-					src: THREAT_REPORT_IMAGE_CARD,
+					src: HTB_WRITEUPS_V,
 					alt: "Big worm",
 				},
 			},
@@ -79,7 +236,7 @@ code {
 		title: "Report title",
 		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
 		image: {
-			src: THREAT_REPORT_IMAGE_CARD,
+			src: HTB_WRITEUPS_V,
 			alt: "Breach Report",
 		},
 		author: "Xnrrrrrr",
@@ -127,7 +284,7 @@ code {
 ``,
 				},
 				image: {
-					src: THREAT_REPORT_IMAGE_CARD,
+					src: HTB_WRITEUPS_V,
 					alt: "Big worm",
 				},
 			},
@@ -141,7 +298,7 @@ export const toolReviews = [
 		title: "Tool Review Title",
 		desc: "This is a brief description that will summarize the tool review. This will get cut off at 100 characters for the landing page.",
 		image: {
-			src: JWT_TOOL_IMAGE_CARD,
+			src: WEEKLY_BLOG_S,
 			alt: "Tool Review",
 		},
 		author: "Xnrrrrrr",
@@ -181,7 +338,7 @@ export const caseStudies = [
 		title: "Case Study Title",
 		desc: "This is a brief description that will summarize the case study. This will get cut off at 100 characters for the landing page.",
 		image: {
-			src: CASE_STUDY1_IMAGE_CARD,
+			src: CRACK_ME_WRITEUPS_T,
 			alt: "Case Study",
 		},
 		author: "Xnrrrrrr",
@@ -301,7 +458,7 @@ export const weeklyBlog = [
 		title: "Weekly Blog Title",
 		desc: "This is a brief description that will summarize the weekly blog. This will get cut off at 100 characters for the landing page.",
 		image: {
-			src: WEEK1_BLOG_IMAGE_CARD,
+			src: WEEKLY_BLOG_S,
 			alt: "Weekly Blog",
 		},
 		author: "Xnrrrrrr",

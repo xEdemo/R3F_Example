@@ -1,6 +1,7 @@
 import React from "react";
 
 const Content = ({ report }) => {
+	console.log(report)
 	return (
 		<div className="report-content">
 			<h1>{report.title}</h1>

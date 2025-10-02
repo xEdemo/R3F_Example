@@ -11,37 +11,41 @@ import "prismjs/components/prism-python.js";
 import "prismjs/components/prism-java.js";
 
 const ReportDetail = ({ reportType, reports, basePath }) => {
-    const { index } = useParams();
-    const report = reports[parseInt(index)];
+	const { index } = useParams();
+	const report = reportType === "about me" ? reports[0] : reports[parseInt(index)] ;
 
-    useEffect(() => {
-        Prism.highlightAll();
-    }, []);
+	useEffect(() => {
+		Prism.highlightAll();
+        console.log(reportType)
+	}, []);
 
-    if (!report) {
-        return (
-            <>
-                <Header />
-                <div className="background">
-                    <div>
-                        No report found with an index of {index}. Click{" "}
-                        <Link to={basePath}>here</Link> to view all {reportType} reports.
-                    </div>
+	if (!report) {
+		return (
+			<>
+				<Header />
+				<div className="background">
+					{index && (
+						<div>
+							No report found with an index of {index}. Click{" "}
+							<Link to={basePath}>here</Link> to view all{" "}
+							{reportType} reports.
+						</div>
+					)}
 					<Footer />
-                </div>
-            </>
-        );
-    }
+				</div>
+			</>
+		);
+	}
 
-    return (
-        <>
-            <Header />
-            <div className="background">
-                <Content report={report} />
-                <Footer />
-            </div>
-        </>
-    );
+	return (
+		<>
+			<Header />
+			<div className="background">
+				<Content report={report} />
+				<Footer />
+			</div>
+		</>
+	);
 };
 
 export default ReportDetail;
