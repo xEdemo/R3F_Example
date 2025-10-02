@@ -1,7 +1,7 @@
 import JWT_TOOL_IMAGE_CARD from "./assets/toolReviews/JWT_TOOL/JWT_TOOL_IMAGE_CARD.png";
-import THREAT_REPORT_IMAGE_CARD from "./assets/threatReports/threatReport/THREAT_REPORT_IMAGE_CARD.jpg";
-import WEEK1_BLOG_IMAGE_CARD from "./assets/weeklyBlogs/WEEK1/WEEK1_BLOG_IMAGE_CARD.jpg";
-import CASE_STUDY1_IMAGE_CARD from "./assets/caseStudies/caseStudy1/CASE_STUDY1_IMAGE_CARD.jpg";
+import THREAT_REPORT_IMAGE_CARD from "./assets/threatReports/threatReport/THREAT_REPORT_IMAGE_CARD.png";
+import WEEK1_BLOG_IMAGE_CARD from "./assets/weeklyBlogs/WEEK1/WEEK1_BLOG_IMAGE_CARD.png";
+import CASE_STUDY1_IMAGE_CARD from "./assets/caseStudies/caseStudy1/CASE_STUDY1_IMAGE_CARD.png";
 import THREAT_PROFILE1_IMAGE_CARD from "./assets/threatProfiles/threatProfile1/THREAT_PROFILE1_IMAGE_CARD.png";
 import MALWARE_ANALYSIS1_IMAGE_CARD from "./assets/malwareAnalyses/malwareAnalysis1/MALWARE_ANALYSIS1_IMAGE_CARD.png";
 
