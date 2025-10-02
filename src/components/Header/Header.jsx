@@ -12,7 +12,8 @@ const Header = () => {
             <nav className="web-header">
                 <ul>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/">
+                        <img src="/src/assets/hook.png" alt="" /></Link>
                     </li>
                 </ul>
                 <ul>
