@@ -1,7 +1,12 @@
 import React from "react";
+import { FiCopy } from "react-icons/fi";
 
 const Content = ({ report }) => {
-	console.log(report)
+
+	const handleCopy = (text) => {
+		navigator.clipboard.writeText(text);
+	};
+
 	return (
 		<div className="report-content">
 			<h1>{report.title}</h1>
@@ -16,11 +21,20 @@ const Content = ({ report }) => {
 					{content.header && <h3>{content.header}</h3>}
 					{content.p && <p>{content.p}</p>}
 					{content.code.content && (
-						<pre className="report-content-pre" style={{ margin: "1rem 0rem" }}>
-							<code className={`${content.code.lang}`}>
-								{content.code.content}
-							</code>
-						</pre>
+						<div className="report-content-code-container">
+							<pre className="report-content-pre">
+								<code className={content.code.lang}>
+									{content.code.content}
+								</code>
+								<button
+									className="copy-code-button"
+									onClick={() => handleCopy(content.code.content)}
+									aria-label="Copy code"
+								>
+									<FiCopy />
+								</button>
+							</pre>
+						</div>
 					)}
 					{content.image.src && (
 						<div className="report-content-image-container">

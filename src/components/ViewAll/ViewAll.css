@@ -12,7 +12,7 @@
 	height: 280px;
 }
 
-.reports-container h3 {
+.reports-container h2 {
 	text-align: center;
 }
 
@@ -20,7 +20,7 @@
 	padding-top: 1rem;
 }
 
-.reports-container > div {
+.reports-container > a {
 	display: flex;
 	position: relative;
 	width: 600px;
@@ -30,7 +30,7 @@
 	text-decoration: none;
 }
 
-.reports-container > div > div {
+.reports-container > a > div {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -40,4 +40,22 @@
 .reports-container h3 {
 	font-size: 2rem;
 	color: #918f8f;
+}
+
+.reports-gauge-wrap {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 180px; /* was 140px */
+	height: 120px; /* was ~90px */
+	pointer-events: none; /* keep the whole card clickable */
+}
+
+@media (max-width: 700px) {
+	.reports-gauge-wrap {
+		width: 160px;
+		height: 110px;
+		right: 10px;
+		bottom: 10px;
+	}
 }

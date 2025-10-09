@@ -29,28 +29,19 @@ const Landing = () => {
 						</div>
 					</section>
 					<section className="featured-section">
-						<h2 className="section-title">Featured Content</h2>
-						<div className="featured-content">
-							{staticLandingCards.map((c, i) => (
-								<LandingCard
-									key={i}
-									title={c.title}
-									imageSrc={c.image.src}
-									imageAlt={c.image.alt}
-									desc={c.description}
-									link={c.link}
-								/>
-							))}
-						</div>
-					</section>
-					<section className="about-section">
-						<h2 className="section-title">About Me</h2>
-						<div className="about-content">
-							<p>This paragraph is my about me.</p>
-							<p>
-								You can contact me with inquiries at (email) or
-								discord
-							</p>
+						<div>
+							<div className="featured-content">
+								{staticLandingCards.map((c, i) => (
+									<LandingCard
+										key={i}
+										title={c.title}
+										imageSrc={c.image.src}
+										imageAlt={c.image.alt}
+										desc={c.description}
+										link={c.link}
+									/>
+								))}
+							</div>
 						</div>
 					</section>
 				</div>

@@ -21,6 +21,30 @@
 	text-align: right;
 }
 
+.report-content-code-container {
+	position: relative;
+}
+
+.report-content-pre {
+	position: relative;
+}
+
+.copy-code-button {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	background: none;
+	border: none;
+	color: var(--primary-text-color);
+	cursor: pointer;
+	font-size: 2rem;
+	transition: color 0.2s ease;
+}
+
+.copy-code-button:hover {
+	color: var(--secondary-text-color);
+}
+
 .report-content-image-container {
 	width: 100%;
 	display: flex;

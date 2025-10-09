@@ -4,6 +4,7 @@ import Footer from './Footer/Footer.jsx';
 import StarRating from './StarRating/StarRating.jsx';
 import Content from './Content/Content.jsx';
 import ViewAll from './ViewAll/ViewAll.jsx'; 
+import DifficultyGauge from './DifficultyGauge/DifficultyGauge.jsx';
 
 export {
 	Header,
@@ -12,4 +13,5 @@ export {
 	StarRating,
 	Content,
 	ViewAll,
+	DifficultyGauge,
 };

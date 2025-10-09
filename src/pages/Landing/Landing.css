@@ -38,6 +38,11 @@
 	margin-bottom: 40px;
 }
 
+.featured-section > div {
+	margin: auto;
+	padding: 0px 30px;
+}
+
 .featured-content {
 	display: flex;
 	flex-wrap: wrap;
@@ -45,20 +50,4 @@
 	justify-content: center;
 	max-width: 1500px;
 	margin: auto;
-}
-
-.section-title {
-	font-size: 2rem;
-	margin-bottom: 1rem;
-	text-align: center;
-}
-
-.about-section {
-	text-align: center;
-	margin-top: 40px;
-}
-
-.about-content p {
-	font-size: 1.2rem;
-	margin: 10px 0;
 }

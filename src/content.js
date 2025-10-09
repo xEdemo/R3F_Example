@@ -14,7 +14,15 @@ const programmingLanguage = {
 	java: "language-java",
 	js: "language-javascript",
 	python: "language-python",
-}
+};
+
+const tags = {
+	easy: "Easy",
+	medium: "Medium",
+	hard: "Hard",
+	insane: "Insane",
+	xss: "XSS",
+};
 
 export const staticLandingCards = [
 	{
@@ -96,7 +104,7 @@ export const aboutMe = [
 
 export const HTBWriteups = [
 	{
-		title: "HTB Writeups",
+		title: "Guardian",
 		desc: "This is a brief description that will summarize the hack.",
 		image: {
 			src: HTB_WRITEUPS_V,
@@ -104,13 +112,35 @@ export const HTBWriteups = [
 		},
 		author: "Xnrrrrrr",
 		timestamp: "October 13, 2024",
+		passwordProtected: true,
+		tags: [tags.easy],
+		difficulty: "medium",
 		content: [
 			{
 				p: "",
 				code: {
-					lang: "",
+					lang: programmingLanguage.css,
 					content: 
-``,
+`.background {
+	width: 100%;
+	min-height: calc(100vh - 50px);
+	height: calc(100% - 50px);
+	position: relative;
+	background-color: rgb(55, 0, 0);
+	top: 50px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+code {
+	all: unset;
+	font-family: monospace; /* Reapply the default monospace font */
+	background-color: initial;
+	color: initial;
+	width: 100%;
+}`,
 				},
 				image: {
 					src: "",
