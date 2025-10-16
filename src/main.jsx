@@ -13,7 +13,6 @@ import { aboutMe, HTBWriteups, crackMeWriteups, threatProfiles, malwareAnalyses,
 
 // Pages:
 import { Landing, ReportList, ReportDetail } from "./pages";
-import Meatus from "./pages/Meatus/Meatus.jsx";
 
 // Components:
 
@@ -32,7 +31,6 @@ const router = createBrowserRouter(
 			<Route path="/weekly-blogs/:index" element={<ReportDetail reports={weeklyBlog} basePath="/weekly-blogs" reportType="weekly" />} />
 			<Route path="/crack-me-writeups" element={<ReportList reports={crackMeWriteups} title="Crack Me Writeups" basePath="/crack-me-writeups" />} />
 			<Route path="/crack-me-writeups/:index" element={<ReportDetail reports={crackMeWriteups} basePath="/crack-me-writeups" reportType="crack me" />} />
-            <Route path="/meatus" element={<Meatus />} />
         </Route>
     )
 );
