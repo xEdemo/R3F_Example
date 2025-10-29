@@ -1,19 +1,104 @@
+.report-layout {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 280px;
+	gap: 2rem;
+	padding: 0 1rem 1rem;
+}
+
 .report-content {
 	padding: 0rem 0rem 1rem;
-	width: 1000px;
+	width: 100%;
 	margin: 0rem auto;
+}
+
+.report-toc {
+	position: sticky;
+	top: 96px; /* header height + breathing room */
+	align-self: start;
+	height: max-content;
+	padding-left: 1rem;
+	border-left: 1px solid var(--divider-color, rgba(255, 255, 255, 0.12));
+}
+
+.report-toc-title {
+	font-weight: 800;
+	font-size: 0.95rem;
+	letter-spacing: 0.02em;
+	color: var(--secondary-text-color, #bbb);
+	margin-bottom: 0.75rem;
+	text-transform: uppercase;
+}
+
+.toc-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.toc-item {
+	margin: 0.15rem 0;
+}
+
+/* h4 slightly indented under h3 */
+.toc-item.h4 {
+	padding-left: 0.75rem;
+	opacity: 0.9;
+}
+
+.toc-link {
+	width: 100%;
+	text-align: left;
+	display: inline-block;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	font: inherit;
+	padding: 0.25rem 0;
+	color: var(--primary-text-color, #eee);
+	transition: opacity 0.2s ease, transform 0.05s ease;
+}
+
+.toc-link:hover {
+	opacity: 0.85;
+	transform: translateX(1px);
+}
+
+.toc-item.active .toc-link {
+	font-weight: 800; /* bolded in the right container */
+}
+
+.toc-item.active .toc-link::before {
+	content: "";
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin-right: 8px;
+	border-radius: 50%;
+	background: var(--secondary-text-color, #aaa);
+	vertical-align: middle;
 }
 
 .report-content h3 {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	font-weight: bolder;
+}
+
+.report-content h4 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-size: 2rem;
+	font-style: italic;
 }
 
 .report-content img {
 	padding: 1rem 0rem;
 	filter: grayscale(10%);
+	max-height: 600px;
 }
 
 .report-content-written-by {
@@ -27,6 +112,13 @@
 
 .report-content-pre {
 	position: relative;
+	max-height: 500px;
+}
+
+.report-content-ol {
+	padding-left: 1.25rem;
+	margin: 0.5rem 0 1rem;
+	color: var(--primary-text-color, #eee);
 }
 
 .copy-code-button {
@@ -49,4 +141,13 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
+}
+
+@media (max-width: 1200px) {
+	.report-layout {
+		grid-template-columns: 1fr;
+	}
+	.report-toc {
+		display: none;
+	}
 }

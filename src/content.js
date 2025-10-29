@@ -60,7 +60,7 @@ export const staticLandingCards = [
 		},
 		description: "",
 		link: "/crack-me-writeups",
-	}
+	},
 ];
 
 export const aboutMe = [
@@ -78,8 +78,7 @@ export const aboutMe = [
 				p: "",
 				code: {
 					lang: "",
-					content: 
-``,
+					content: ``,
 				},
 				image: {
 					src: "",
@@ -90,8 +89,7 @@ export const aboutMe = [
 				p: "",
 				code: {
 					lang: "",
-					content: 
-``,
+					content: ``,
 				},
 				image: {
 					src: "",
@@ -99,7 +97,7 @@ export const aboutMe = [
 				},
 			},
 		],
-	}
+	},
 ];
 
 export const HTBWriteups = [
@@ -120,8 +118,7 @@ export const HTBWriteups = [
 				p: "",
 				code: {
 					lang: programmingLanguage.css,
-					content: 
-`.background {
+					content: `.background {
 	width: 100%;
 	min-height: calc(100vh - 50px);
 	height: calc(100% - 50px);
@@ -151,8 +148,7 @@ code {
 				p: "",
 				code: {
 					lang: "",
-					content: 
-``,
+					content: ``,
 				},
 				image: {
 					src: "",
@@ -160,7 +156,117 @@ code {
 				},
 			},
 		],
-	}
+	},
+];
+
+export const weeklyBlog = [
+	{
+		title: "Weekly Blog Title",
+		desc: {
+			html: `
+       			This is a brief description that will summarize the weekly blog.
+        		You can include an inline <a href="https://example.com" target="_blank" rel="noopener noreferrer">link</a>.
+				This is a brief description that will summarize the weekly blog.
+				This is a brief description that will summarize the weekly blog.
+				This is a brief description that will summarize the weekly blog.
+				This is a brief description that will summarize the weekly blog.
+				This is a brief description that will summarize the weekly blog.
+				This is a brief description that will summarize the weekly blog.
+      		`,
+		},
+		image: {
+			src: WEEKLY_BLOG_S,
+			alt: "Weekly Blog",
+		},
+		author: "Xnrrrrrr",
+		timestamp: "October 13, 2024",
+		rating: 3.4,
+		content: [
+			{
+				header: "Header 1",
+				p: "This paragraph explains the topic of this weeks blog and the code I have present",
+				code: {
+					lang: programmingLanguage.css,
+					content: `.background {
+	width: 100%;
+	min-height: 100vh;
+	height: 100%;
+	position: relative;
+	background-color: var(--base-background-color);
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0)), url("../src/assets/general/TUFF.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 80px;
+}`,
+				},
+				/* Optional ordered list at header level */
+				ol: [
+					"Set up the background container",
+					"Apply linear gradient overlay",
+					"Enable vertical scrolling",
+				],
+				/* Optional nested subheaders (h4) */
+				subheaders: [
+					{
+						subheader: "Implementation Notes",
+						paragraphs: [
+							"We’re using CSS variables to inherit theme colors.",
+							{
+								html: `Remember to keep contrast high for accessibility. Consider <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener noreferrer">testing contrast</a>.`,
+							},
+						],
+					},
+					{
+						subheader: "Edge Cases",
+						paragraphs:
+							"Check mobile devices with small screens to ensure the layout adapts properly.",
+						ol: [
+							"Very long titles",
+							"Missing images",
+							"Nested lists",
+						],
+					},
+				],
+			},
+
+			{
+				header: "New Comings",
+				p: ["Hello there", "Hi roonie"],
+				image: {
+					src: WEEKLY_BLOG_S,
+					alt: "Weekly Blog S",
+				},
+			},
+			{
+				header: "Another Important Image",
+				p: "Here I go into detail and explain what I did in the following image",
+				image: {
+					src: WEEKLY_BLOG_S,
+					alt: "Weekly Blog S",
+				},
+			},
+			{
+				header: "FAQ",
+				subheaders: [
+					{
+						subheader: "Where can I find your blog?",
+						paragraphs: {
+							html: `You can find it here at <a href="https://www.lvst.com" target="_blank" rel="noopener noreferrer">www.lvst.com</a>.`,
+						},
+					},
+					{
+						subheader: "Where can I help support your website?",
+						paragraphs: "There will be no donations accepted.",
+					},
+				],
+			},
+		],
+	},
 ];
 
 export const crackMeWriteups = [
@@ -179,8 +285,7 @@ export const crackMeWriteups = [
 				p: "",
 				code: {
 					lang: "",
-					content: 
-``,
+					content: ``,
 				},
 				image: {
 					src: "",
@@ -191,8 +296,7 @@ export const crackMeWriteups = [
 				p: "",
 				code: {
 					lang: "",
-					content: 
-``,
+					content: ``,
 				},
 				image: {
 					src: "",
@@ -202,323 +306,3 @@ export const crackMeWriteups = [
 		],
 	},
 ];
-
-export const breachReports = [
-	{
-		title: "Report title",
-		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
-		image: {
-			src: HTB_WRITEUPS_V,
-			alt: "Breach Report",
-		},
-		author: "Xnrrrrrr",
-		timestamp: "October 13, 2024",
-		rating: 3.4,
-		content: [
-			{
-				header: "My Content Here",
-				p: "The following code was used in this website to give you a better user experience.",
-				code: {
-					lang: programmingLanguage.css,
-					content: 
-`.background {
-	width: 100%;
-	min-height: calc(100vh - 50px);
-	height: calc(100% - 50px);
-	position: relative;
-	background-color: rgb(55, 0, 0);
-	top: 50px;
-	overflow-y: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-code {
-	all: unset;
-	font-family: monospace; /* Reapply the default monospace font */
-	background-color: initial;
-	color: initial;
-	width: 100%;
-}`,
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-			{
-				header: "",
-				p: "Now, wasn't that nice of me?",
-				code: {
-					lang: "",
-					content: 
-``,
-				},
-				image: {
-					src: HTB_WRITEUPS_V,
-					alt: "Big worm",
-				},
-			},
-		],
-	},
-	{
-		title: "Report title",
-		desc: "This is a brief description that will summarize the treat report. This will get cut off at 100 characters for the landing page.",
-		image: {
-			src: HTB_WRITEUPS_V,
-			alt: "Breach Report",
-		},
-		author: "Xnrrrrrr",
-		timestamp: "October 13, 2024",
-		rating: 3.4,
-		content: [
-			{
-				header: "My Content Here",
-				p: "The following code was used in this website to give you a better user experience.",
-				code: {
-					lang: programmingLanguage.css,
-					content: 
-`.background {
-	width: 100%;
-	min-height: calc(100vh - 50px);
-	height: calc(100% - 50px);
-	position: relative;
-	background-color: rgb(55, 0, 0);
-	top: 50px;
-	overflow-y: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-code {
-	all: unset;
-	font-family: monospace; /* Reapply the default monospace font */
-	background-color: initial;
-	color: initial;
-	width: 100%;
-}`,
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-			{
-				header: "",
-				p: "Now, wasn't that nice of me?",
-				code: {
-					lang: "",
-					content: 
-``,
-				},
-				image: {
-					src: HTB_WRITEUPS_V,
-					alt: "Big worm",
-				},
-			},
-		],
-	},
-	
-];
-
-export const toolReviews = [
-	{
-		title: "Tool Review Title",
-		desc: "This is a brief description that will summarize the tool review. This will get cut off at 100 characters for the landing page.",
-		image: {
-			src: WEEKLY_BLOG_S,
-			alt: "Tool Review",
-		},
-		author: "Xnrrrrrr",
-		timestamp: "October 13, 2024",
-		rating: 3.4,
-		content: [
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: 
-``,
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: 
-``,
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-		],
-	},
-];
-
-export const caseStudies = [
-	{
-		title: "Case Study Title",
-		desc: "This is a brief description that will summarize the case study. This will get cut off at 100 characters for the landing page.",
-		image: {
-			src: CRACK_ME_WRITEUPS_T,
-			alt: "Case Study",
-		},
-		author: "Xnrrrrrr",
-		timestamp: "October 13, 2024",
-		rating: 3.4,
-		content: [
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: 
-``,
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: 
-``,
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-		],
-	},
-];
-
-export const threatProfiles = [
-	{
-		title: "Threat Profile Title",
-		desc: "This is a brief description that will summarize the threat profile. This will get cut off at 100 characters for the landing page.",
-		image: {
-			src: THREAT_PROFILE1_IMAGE_CARD,
-			alt: "Threat Profile",
-		},
-		author: "Xnrrrrrr",
-		timestamp: "October 13, 2024",
-		rating: 3.4,
-		content: [
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: 
-``,
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: 
-``,
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-		],
-	},
-];
-
-export const malwareAnalyses = [
-	{
-		title: "Malware Analysis Title",
-		desc: "This is a brief description that will summarize the malware. This will get cut off at 100 characters for the landing page.",
-		image: {
-			src: MALWARE_ANALYSIS1_IMAGE_CARD,
-			alt: "Malware Analysis",
-		},
-		author: "Xnrrrrrr",
-		timestamp: "October 13, 2024",
-		rating: 3.4,
-		content: [
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: 
-``,
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: 
-``,
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-		],
-	},
-];
-
-export const weeklyBlog = [
-	{
-		title: "Weekly Blog Title",
-		desc: "This is a brief description that will summarize the weekly blog. This will get cut off at 100 characters for the landing page.",
-		image: {
-			src: WEEKLY_BLOG_S,
-			alt: "Weekly Blog",
-		},
-		author: "Xnrrrrrr",
-		timestamp: "October 13, 2024",
-		rating: 3.4,
-		content: [
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: 
-``,
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-			{
-				p: "",
-				code: {
-					lang: "",
-					content: 
-``,
-				},
-				image: {
-					src: "",
-					alt: "",
-				},
-			},
-		],
-	},
-]

@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 // JS
-import { aboutMe, HTBWriteups, crackMeWriteups, threatProfiles, malwareAnalyses, weeklyBlog,  } from "./content.js" 
+import { aboutMe, HTBWriteups, crackMeWriteups, weeklyBlog  } from "./content.js" 
 
 // Pages:
 import { Landing, ReportList, ReportDetail } from "./pages";

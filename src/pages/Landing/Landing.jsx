@@ -1,14 +1,6 @@
 import { Header, LandingCard, Footer } from "./../../components";
 import { Link } from "react-router-dom";
-import {
-	staticLandingCards,
-	breachReports,
-	toolReviews,
-	caseStudies,
-	threatProfiles,
-	malwareAnalyses,
-	weeklyBlog,
-} from "../../content.js";
+import { staticLandingCards } from "../../content.js";
 
 const Landing = () => {
 	return (
